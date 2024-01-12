@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="./info.css">
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <img src="./Asset/images/iconoroa(B).webp" alt="" width="60">
+      <span class="logo_name">Bienvenido</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#" class="active">
+          <i class='bx bxs-grid-alt'></i>
+          <span class="links_name">Inicio</span>
+        </a>
+      </li>
+      <li>
+        <a href="./Asset/Clientes/clientes.html">
+          <i class='bx bxs-group'></i>
+          <span class="links_name">Clientes</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-spreadsheet'></i>
+          <span class="links_name">Factura</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-folder-open'></i>
+          <span class="links_name">Consulta</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-bar-chart-alt-2'></i>
+          <span class="links_name">Analítica</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-book'></i>
+          <span class="links_name">Reporte</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-user-account'></i>
+          <span class="links_name">Usuario</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-info-circle'></i>
+          <span class="links_name">Información</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-cog"></i>
+          <span class="links_name">Configuración</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name">Salir</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class="bx bx-menu sidebarBtn"></i>
+        <span class="dashboard">ROA +</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <i class="bx bx-search"></i>
+      </div>
+      <div class="profile-details">
+        <img src="../images/user.png" alt="" />
+        <span class="admin_name">Prem Shahi</span>
+        <i class="bx bx-chevron-down"></i>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div class="texto">
+      <p>Roa Plus es un software médico de vanguardia que ha revolucionado la forma en que se administra y organiza la información en el ámbito de la salud. Con su avanzada tecnología y su enfoque en la eficiencia, ha logrado simplificar y mejorar significativamente la gestión de los procesos médicos.</p>
+      <br>
+      <p>Una de las características más destacadas de Roa Plus es su capacidad de administración integral. Este software permite a los profesionales de la salud tener acceso a una amplia gama de herramientas y funciones que les facilitan la gestión de sus consultas y pacientes. Desde la programación de citas y la gestión de historias clínicas hasta la facturación y la generación de informes, Roa Plus ofrece todo lo necesario para llevar a cabo una práctica médica de manera eficiente y efectiva.</p>
+      <br>
+      <p>La agenda digital de Roa Plus es una herramienta especialmente útil para los médicos y sus equipos. Con ella, es posible programar citas de manera rápida y sencilla, teniendo en cuenta la disponibilidad de cada profesional y las preferencias de los pacientes. Además, la agenda digital permite enviar recordatorios automáticos a los pacientes, lo que reduce significativamente el número de ausencias y retrasos. Esto no solo mejora la experiencia del paciente, sino que también optimiza el tiempo de trabajo de los médicos.</p>
+      <br>
+      <p>Otra ventaja de Roa Plus es su capacidad para gestionar las historias clínicas de manera digital. Con este software, los médicos pueden acceder fácilmente a los registros médicos de sus pacientes, lo que les permite tener toda la información necesaria al alcance de su mano. Esto no solo agiliza el proceso de atención médica, sino que también mejora la precisión y la calidad de los diagnósticos y tratamientos.</p>
+      <br>
+    </div>
+    <!--<div class="wrapper">
+      <img class="img" src="../images/logoroa.png" alt="">
+      <div>
+        <h2>ROA +</h2>
+        <p>Roa Plus es un software médico de vanguardia que ha revolucionado la forma en que se administra y organiza la información en el ámbito de la salud. Con su avanzada tecnología y su enfoque en la eficiencia, ha logrado simplificar y mejorar significativamente la gestión de los procesos médicos.</p>
+      </div>
+    </div>-->
+  </section>
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function () {
+      sidebar.classList.toggle("active");
+      if (sidebar.classList.contains("active")) {
+        sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+      } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    };
+  </script>
+</body>
+</html>
